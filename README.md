@@ -92,5 +92,3 @@ NextAuth is used for handling user sessions. You can set up your preferred authe
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-
-This version is fully formatted in Markdown and ready for you to paste directly into your code editor. Let me know if you need any additional changes!
