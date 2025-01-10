@@ -4,6 +4,7 @@ interface ISubmission extends Document {
   influencer: mongoose.Types.ObjectId;
   campaign: mongoose.Types.ObjectId;
   contentUrl: string;
+  description: string;
   status: "pending" | "approved" | "rejected";
   submitted_at: Date;
 }
@@ -21,6 +22,10 @@ const submissionSchema = new Schema<ISubmission>(
       required: true,
     },
     contentUrl: {
+      type: String,
+      required: true,
+    },
+    description: {
       type: String,
       required: true,
     },
