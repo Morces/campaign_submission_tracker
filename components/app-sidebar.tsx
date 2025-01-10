@@ -45,28 +45,9 @@ interface MenuItem {
 // Menu items.
 const items: MenuItem[] = [
   {
-    title: "Dashboard",
+    title: "Submissions",
     url: "/dashboard",
     icon: LayoutDashboard,
-    isActive: false,
-  },
-  {
-    title: "Menu",
-    url: "/dashboard/menu",
-    icon: Inbox,
-    isActive: false,
-  },
-
-  {
-    title: "Users",
-    url: "/dashboard/users",
-    icon: Users,
-    isActive: false,
-  },
-  {
-    title: "Roles",
-    url: "/dashboard/roles",
-    icon: Notebook,
     isActive: false,
   },
 ];

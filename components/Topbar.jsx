@@ -34,7 +34,7 @@ const Topbar = () => {
   const { user } = useContext(AppContext);
 
   return (
-    <div className="flex justify-end gap-x-4 items-center">
+    <div className="flex w-full fixed right-4 top-4 justify-end gap-x-4 items-center">
       <div className="flex flex-col items-end">
         <p className="font-bold">{""}</p>
         <p className="text-gray-600">{formattedDate}</p>

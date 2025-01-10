@@ -1,19 +1,21 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
 import { useState } from "react";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <nav className="flex justify-between items-center p-4 border-b">
       <div className="text-lg font-bold">Influencer Hub</div>
       <div className="flex items-center gap-4 md:gap-8">
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex gap-4">
-          <a href="#" className="hover:underline">
-            Features
+        <div className="hidden md:flex  items-center gap-4">
+          <a href="#campaigns" className="hover:underline">
+            Campaigns
           </a>
           <a href="#" className="hover:underline">
             About
@@ -21,7 +23,10 @@ export function Navbar() {
           <a href="#" className="hover:underline">
             Contact
           </a>
-          <Button className="bg-blue-500 text-white px-4 py-2 rounded-md">
+          <Button
+            onClick={() => router.push("/auth/login")}
+            className="bg-blue-500 text-white px-4 py-2 rounded-md"
+          >
             Get Started
           </Button>
         </div>

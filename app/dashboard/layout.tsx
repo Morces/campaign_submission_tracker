@@ -44,13 +44,13 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
           <AppSidebar />
         </div>
         <main
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased `}
         >
           <div className="flex w-full justify-between bg-white pb-3">
             <SidebarTrigger className="bg-white shadow-md rounded-lg m-4" />
             <Topbar />
           </div>
-          {children}
+          <div className="m-5 bg-slate-50 w-full">{children}</div>
         </main>
       </SidebarProvider>
     </AppContext.Provider>
